@@ -1,3 +1,41 @@
-.App{
-    text-align : center;
+body{
+    margin:0;
+    text-align:center;
+}
+.Navbar {
+    padding:20px;
+    display:flex;
+    align-items:center;
+    max-width :600px;
+    margin: 0 auto;
+    border-bottom : 1px solid #cdb;
+}
+.Navbar h1{
+    color :hsl(0, 74%, 48%);
+    font-weight: 500;
+}
+.Navbar .navLinks {
+    margin-left: auto;
+    display :flex;
+    
+}
+li{
+    list-style-type: none;
+}
+.Navbar a{
+    text-decoration: none;
+    margin-left: 20px;
+    padding:6px;
+    
+   color : hsl(0, 4%, 27%);
+    max-width:70%;
+   
+}
+/* .navLinks:hover{
+    transform: (2,3);
+} */
+.Content{
+    max-width:600px;
+    padding:20px;
+    margin:40px auto;
 }

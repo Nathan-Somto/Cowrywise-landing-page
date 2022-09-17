@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './Navbar';
+import Home from './Home';
 
 export default function App(){
 
@@ -7,7 +8,7 @@ export default function App(){
         <div className="App">
             <Navbar/>
             <div className = "Content">
-            <h1>Welcome to my superhero Blog</h1>
+            <Home />
             </div>
         </div>
     );

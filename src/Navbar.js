@@ -6,9 +6,11 @@ export default function Navbar ()
             <h1>Superhero Blog</h1>
             <ul className = "navLinks">
                 <li><a href ="#Home">Home</a></li>
-                <li> <a href="#About">About</a></li>
-                <li><a href="/create">New Blog</a></li>
-                <li> <a href="#Contact">Contact</a></li>
+               <li><a href="/create" style ={{
+                color :"#fff",
+                backgroundColor : "hsl(0, 60% , 50%)",
+                borderRadius : "8px"
+               }}>New Blog</a></li>
                  </ul>
         </nav>
     );
