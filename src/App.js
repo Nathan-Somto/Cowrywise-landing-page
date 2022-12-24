@@ -1,16 +1,25 @@
+
 import './App.css';
-import Navbar from './Navbar';
-import Home from './Home';
+import Header from './Components/Heading';
+import Navbar from './Components/Navbar';
+import Info from './Components/Info';
+import Payment from './Components/Payment';
+import  Moreinfo from './Components/Moreinfo';
+import Signup from './Components/Signup';
+import Saving from './Components/Saving';
 
-export default function App(){
-
-    return (
-        <div className="App">
-            <Navbar/>
-            <div className = "Content">
-            <Home />
-            </div>
-        </div>
-    );
+function App({title}) {
+  return (
+   <>
+    <Navbar />
+    <Header title ="Somtochi"/>
+    <Info />
+    <Payment />
+    <Moreinfo />
+    <Signup />
+    <Saving />
+   </>
+  );
 }
 
+export default App;
