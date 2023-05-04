@@ -1,32 +1,10 @@
 import {motion} from 'framer-motion';
-import { useInView } from "react-intersection-observer";
 import {useEffect,useState,useRef} from 'react';
-function useInview(ref){
-const [animate, setAnimate] =useState(false);
-   /*  useEffect =(() => {
-   function reveal (){
-            let windowHeight = window.innerHeight;
-            let elementTop = ref.current.getBoundingClientRect().bottom;
-            let elementVisible = 196;
-            console.log("working");
-            return setAnimate(windowHeight - elementTop > 20);
-           
-       
-    }
-    window.addEventListener("scroll",reveal); 
-    return () => window.removeEventListener("scroll",reveal);   
-}, [ref,animate])
-return animate;
-}; */
-}
-
-const Card = ({index, item ,getStyles}) => {
-    
-    
+const Card = ({index, item ,getStyles}) => {    
+  const initialState= index % 2 === 0 ? {x: '100%'} : {x: '-100%'};
   return (
-   /*  <div className='container card' key ={index} style ={{backgroundColor : item.color}} > */
-    <motion.div  key ={index} style ={{backgroundColor : item.color}}  className='container card'  useInView ={{x: 0}}
-    initial = {index % 2 === 0 ? {x: 0} : {x: -100}} > 
+    <motion.div   style ={{backgroundColor : item.color}} transition={{type:"spring", bounce:0.5, stiffness:100, duration:0.35}}  className='container card'  whileInView ={{x: '0%'}}
+    initial = {initialState} > 
       <h3>{item.heading3}</h3>
       <h2>{item.heading1}</h2>
       <p>{item.para}</p>

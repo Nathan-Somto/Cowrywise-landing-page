@@ -9,8 +9,8 @@ const Navbar = () => {
           <img alt="Cowrywise_logo" src={logo}></img>
         </li>
 
-        {nav.map((item) => {
-          return <li className="navItem">{item}</li>;
+        {nav.map((item,index) => {
+          return <li className="navItem" key={index}>{item}</li>;
         })}
       </ul>
       <div className="navButton">
