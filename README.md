@@ -56,8 +56,14 @@ Installing the project can be done in 4 easy steps.
 ## Pages
 
 ### Home page
+
+![Home-page](./screenshots/home-page.png)
+
 ### Login page
+![Login-page](./screenshots/login-page.png)
+
 ### Signup page
+![Signup-page](./screenshots/signup-page.png)
 
 ## Design
 The link to the figma file, i used 
