@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Cowrywise Landing Page
+<div align=center>
+<img src='./src/Assets/cowrywise-logos-variant-formats-1/cowrywise-logo.svg' height= 300 width =300/>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Overview](#overview)
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [Installation](#installation)
+- [Pages](#pages)
+   - [Home page](#home-page)
+   - [Login page](#login-page)
+   - [Sign up page](#signup-page)
+- [Design](#design)
+- [What i Learned](#what-i-learned)
+- [Continued Development](#continued-development)
+- [Contributors](#contributors)
 
-## Available Scripts
+## Overview 
+ This project is part of my attempt to recreate the site's of popular brands around my region. 
+ I had a lot of fun building this project, as i got the chance to practice building tricky layouts.
 
-In the project directory, you can run:
+## Tech Stack
+Nothing to fancy was used to build the project but you can take a look at my tech stack.
 
-### `npm start`
+- [React](https://#) (Frontend Library)
+- [Framer Motion](https://#) (Animation Library)
+- [Vite](https://#) (Module Bundler)
+- [React router dom](https://#) (For client side Routing)
+- [Javascript](https://#) (For all the bugs in my program.)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Features
+- A Custom carousel
+- Mobile navigation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
+Installing the project can be done in 4 easy steps.
+1. Clone the git repository to your locally machine
+```git
+    $ git clone https://www.github.com/nathan_somto/cowrywise-landing-page.git
+```
+2. Run the command to install all dependencies
+```git
+    $ npm installl
+```
+3. Start the server
+```git
+    $ npm start
+```
+4. Open it on your favourite browser (Most likely chrome.)
+```git
+   $ server started on http://localhost:5173
+```
+## Pages
 
-### `npm run build`
+### Home page
+### Login page
+### Signup page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Design
+The link to the figma file, i used 
+## What i Learned
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Continued Development
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributors
+- [Nathan_Somto](https://www.github.com/Nathan_Somto)

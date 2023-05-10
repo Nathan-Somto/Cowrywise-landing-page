@@ -1,0 +1,9 @@
+.auth__nav{
+    width:80%;
+    height:100px;
+    display:flex;
+    align-items: flex-end;
+    padding:0.5rem;
+   margin-left:5%;
+   
+}

@@ -1,0 +1,76 @@
+/* InfoSection */
+.perks__section{
+    margin-top:12rem;
+  }
+  .perks__card__container{
+    display:grid;
+   grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto);
+    gap:30px;
+    grid-auto-rows:300px;
+    padding:20px;
+    margin:0 auto;
+    
+  }
+  
+  .perks__text{
+    grid-row: span 1;
+    text-align:left;
+    padding-left: 1.5rem;
+  }
+  .perks__text h1{
+    font-size:3rem;
+  }
+  .perks__text p{
+    font-weight:300;
+    font-size:1.25em;
+  }
+ 
+  .perks__card
+  {
+    height:600px;
+    width:80%;
+    margin:0 auto;
+    border-radius:1.5rem;
+    grid-row: span 2;
+    padding:1.5rem 1.75rem;
+    
+  }
+  .perks__card__image{
+    max-height:350px;
+    width:100%;
+  }
+  .perks__card h3{
+    margin-bottom:1.15rem;
+    color:rgb(133, 137, 151);
+    font-weight: 500;
+  }
+  .perks__card h2{
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 0.85rem;
+    color:var(--very-dark-blue);
+  }
+  .perks__card p{
+    margin-bottom: 0.75rem;
+    font-weight:400;
+    opacity:0.8;
+    color:rgb(95, 119, 210);
+  }
+  .perks__card a{
+    font-weight:700;
+    cursor:pointer;
+    color:var(--primary-blue);
+  }
+  .white h3, .white p, .white a, .white h2{
+    color:var(--white);
+  }
+  .perks__card__chevron{
+    font-size:1.1rem;
+    font-weight: 700;
+  }
+  @media (min-width:1024px) {
+    .perks__card__container{
+        grid-template-columns: repeat(2,1fr);
+    }
+  }

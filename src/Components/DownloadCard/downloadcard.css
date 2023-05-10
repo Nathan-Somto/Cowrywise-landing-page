@@ -1,0 +1,87 @@
+.download__card{
+    width:90%;
+    font-size:14px;
+    padding:0.95rem 1.1rem;
+    border-radius:8px;
+    box-shadow: 1px 5px 10px rgba(226, 226, 226, 0.868);
+    border:1px solid rgb(204, 204, 204);
+    margin-bottom:1.2rem;
+}
+.download__card__top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:1.2rem;
+}
+.download__card__top__left{
+    display:flex;
+    align-items: center;
+ 
+}
+.download__card__rating {
+    margin-right: 0.5rem;
+    font-size:1.25rem;
+    opacity:0.9;
+}
+.download__card__rating span{
+    font-size: 0.9rem;
+    color:rgb(162, 178, 211);
+    opacity:1;
+}
+.download__button{
+    padding:0.55rem 0.35rem;
+    width:8.5rem;
+    border:none;
+    border-radius:3px;
+    background-color: rgb(9, 43, 97);
+    color:#fff;
+    box-shadow:0px 2px 8px  rgba(128, 128, 128, 0.356);
+  }
+  .download__button__text{
+    margin-left:0.5rem;
+  }
+  .download__button__action{
+    font-size:0.7rem;
+    font-weight:500;
+    margin-bottom:0.25rem;
+    opacity:0.8;
+  }
+  .download__stars{
+    color:rgb(244, 209, 8);
+  }
+  .download__store{
+    margin-top:0.5rem;
+    margin-bottom:0.65rem;
+    font-weight:700;
+    font-size:1.55rem;
+    color:var(--semi-light-blue);
+  }
+  .download__review{
+    font-size:0.9rem;
+    opacity:0.8;
+    color:var(--very-dark-blue);
+    font-weight: 400;
+    margin-bottom:2.5rem;
+  }
+.download__link{
+    color:var(--primary-blue);
+    font-weight:500;
+    cursor:pointer;
+}
+@media (min-width:500px){
+    .download__card{
+        width:450px;
+        font-size: 16px;
+    }
+}
+@media (min-width:800px){
+    .download__card{
+        margin-right: 1rem;
+    }
+}
+@media(min-width:1024px){
+    .download__card{
+        width:550px;
+        margin-right: 2rem;
+    }
+}

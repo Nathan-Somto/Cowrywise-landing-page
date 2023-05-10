@@ -1,0 +1,137 @@
+.signup{
+    display:grid;
+    grid-template-columns: 1fr;
+    background: url('../../Assets/Signup/signup_bg_image.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left;
+    background-position-x: 100%;
+    background-position-y:160%;
+    min-height:100vh;
+    background-color: rgba(228, 233, 246, 0.99);
+}
+.signup__main{
+   
+    display: flex;
+    width:80% ;
+    margin-left:5%;
+    padding:0.5rem;
+    justify-content: center;
+    
+}
+.signup__form{
+    max-width:700px;
+    width:100%;
+    min-width:350px;
+    background-color: var(--white);
+    padding:0.65rem 1.85rem;
+    border-radius: 12px;
+    max-height:350px
+}
+.signup__heading{
+font-size:2.5rem;
+line-height: 40px;
+font-weight: 700;
+margin-top:1rem;
+}
+.signup__input{
+    display:block;
+    margin-top: 2.85rem;
+    width:100%;
+}
+
+.signup__input--box{
+    outline:none;
+    border:1px solid rgba(217, 215, 215, 0.6);
+    padding:1.15rem 1.2rem;
+    width:100%;
+    background-color: var(--white);
+    color:rgb(159, 159, 159);;
+    border-radius: 8px;
+}
+.signup__input--box:active{
+    border:2px solid rgb(159, 157, 157);
+    background-color: var(--white);
+}
+.signup__input--box:focus{
+    border:2px solid rgb(159, 157, 157);
+    background-color: var(--white);
+}
+.signup__input--box::placeholder{
+    color:rgb(171, 170, 170);
+}
+.signup__form__bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.signup__form__bottom .btn{
+    font-size:1.05rem;
+    padding: 0.9rem 1.8rem;
+    font-weight: 500;
+}
+.sign__up__login{
+    color:rgb(162, 178, 211);
+    font-weight: 500;
+}
+.signup__blue--link{
+    color:var(--light-blue);
+    font-weight: 500;
+    cursor:pointer;
+}
+.signup__testimonal{
+    color:rgba(3, 22, 79, 0.776);
+    margin-top:1.5rem;
+    display:none;
+}
+.signup__testimonal--heading{
+    font-size:1.75rem;
+    font-weight: 700;
+}
+.signup__testimonal--quote{
+     margin-left:0;
+     width:70%;
+     line-height:25px;
+     font-weight: 400;
+     font-size:1.015rem;
+   
+}
+.signup__testimonal__author{
+    font-weight:700;
+    font-size:1.05rem;
+    margin-bottom: 1rem;
+}
+.signup__testimonal--avatar{
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+}
+@media (min-width:800px){
+    .signup__heading{
+        font-size: 2.25rem;
+    }
+    .signup__form{
+        max-height: 375px;
+    }
+}
+@media (min-width:1024px) {
+    .signup__heading{
+        font-size: 2.5rem;
+        line-height: 45px;
+       
+    }
+    .signup__form{
+        margin-right:7.5%;
+        max-height:395px;
+    }
+    .signup__testimonal{
+        display:block;
+    }
+}
+@media (min-width:1300px){
+    .signup__heading{
+        font-size:3.5rem;
+        line-height:60px;
+    }
+}

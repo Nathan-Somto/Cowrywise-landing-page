@@ -1,24 +1,12 @@
+import {BrowserRouter as Router} from 'react-router-dom';
+import  Pages from './Pages';
 
-import './App.css';
-import Header from './Components/Heading';
-import Navbar from './Components/Navbar';
-import Info from './Components/Info';
-import Payment from './Components/Payment';
-import  Moreinfo from './Components/Moreinfo';
-import Signup from './Components/Signup';
-import Saving from './Components/Saving';
-
-function App({title}) {
+function App() {
+  
   return (
-   <>
-    <Navbar />
-    <Header title ="Somtochi"/>
-    <Info />
-    <Payment />
-    <Moreinfo />
-    <Signup />
-    <Saving />
-   </>
+   <Router basename='/'>
+   <Pages/>
+   </Router>
   );
 }
 

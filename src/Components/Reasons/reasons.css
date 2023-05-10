@@ -1,0 +1,36 @@
+.reasons__section{
+    margin-top:6.25rem;
+    padding-left:1.55rem;
+}
+.reasons__section__question{
+    font-size:1.25rem;
+    margin-bottom: 1.45rem;
+    font-weight: 700;
+}
+.reasons__section__reason{
+    font-size:2.8rem;
+    color:rgb(162, 178, 211);
+}
+.reasons__section__answer{
+    margin-right:0.6rem;
+    color:var(--very-dark-blue);
+}
+.downloadcard__container{
+    width:100%;
+    margin-top:2.5rem;
+    display:flex;
+    flex-direction: column;
+   
+}
+@media (min-width:800px){
+    .downloadcard__container{
+        flex-direction:row;
+        align-items: center;
+       
+    }
+}
+@media (min-width:1024px){
+    .reasons__section{
+        padding-left: 2.5rem;
+    }
+}
