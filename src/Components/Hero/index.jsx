@@ -104,14 +104,15 @@ function Hero() {
                 initial={"hidden"}
                 whileInView={"show"}
               >
-                {thumbnails.map((image, index) => (
+                {thumbnails.map((image, imageIndex) => (
                   <motion.img
                     custom={index}
                     variants={thumbnailItem}
                     src={image}
-                    key={index}
-                    alt={`thumbnail ${index + 1}`}
-                    onClick={() => handleImageChange(index)}
+                    key={imageIndex}
+                    alt={`thumbnail ${imageIndex + 1}`}
+                    onClick={() => handleImageChange(imageIndex)}
+                    className={`${index === imageIndex? '':"grey"}`}
                   />
                 ))}
               </motion.div>
@@ -125,7 +126,6 @@ function Hero() {
                 animate={{ x: "0vh", scale: [0.4, 0.5, 1] }}
                 transition={{
                   duration: 0.5,
-                  /*  delay:0.3, */
                   ease: "easeIn",
                 }}
               >
@@ -157,9 +157,6 @@ function Hero() {
                   <source
                     src={videos[index]}
                     type="video/mp4"
-                    onEnded={() => {
-                      console.log("video ended");
-                    }}
                   />
                 </motion.video>
                 <div className="hero__play--button">

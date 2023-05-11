@@ -124,13 +124,15 @@ video{
 }
 .thumbnail__container img{
     margin-right: 0.55rem;
-    filter:grayscale(100%);
     transition: all ease-out 0.3s;
     cursor:pointer;
+    transform: scale(1);
 }
 .thumbnail__container img:hover{
-    filter:grayscale(0%);
-    transform: scale(1.2);
+    transform: scale(1.2) !important;
+}
+.grey{
+    filter:grayscale(100%);
 }
 @media(min-width:1200px){
     .hero__section{
@@ -206,16 +208,7 @@ video{
         bottom:2%;
         left:45%;
     }
-    .thumbnail__container img{
-        margin-right: 0.55rem;
-        filter:grayscale(100%);
-        transition: all ease-out 0.3s;
-        cursor:pointer;
-    }
-    .thumbnail__container img:hover{
-        filter:grayscale(0%);
-        transform: scale(1.2);
-    }
+  
     .hero__section__right{
         align-self: center;
         text-align: left;

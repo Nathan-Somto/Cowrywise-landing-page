@@ -82,3 +82,9 @@ h1,h2,h3,h4,p{
   display:block;
   margin-right:0.75rem;
 }
+.hide-overflow{
+  overflow-y: hidden;
+}
+a{
+  cursor: pointer;
+}
