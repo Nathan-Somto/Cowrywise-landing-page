@@ -117,8 +117,17 @@
     flex-direction: column;
     color:#fff;
     border-radius: 12px;
+   animation: fade-in 0.4s ease-in;
     
 
+}
+@keyframes fade-in {
+    0%{
+        opacity:0
+    }
+    100%{
+        opacity:1
+    }
 }
 .nav__dropdown__left{
     display:flex;
@@ -178,6 +187,7 @@
         flex-direction: row;
         display:flex;
         align-items: center;
+        overflow:visible;
     }
     .nav__inner__container small{
         display:none;

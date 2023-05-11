@@ -2,7 +2,7 @@ const Data = [
     {
         number: '4.4',
         action:'get it on',
-        button_store:' PlayStore',
+        button_store:'PlayStore',
         h3:'Available on the Play Store',
         info:'User interface is fantastic,deposits and withdrawals flawless and fast. I wish I had discovered this years ago, would have been a millionaire by now -obiora ,Nov 2021'
 

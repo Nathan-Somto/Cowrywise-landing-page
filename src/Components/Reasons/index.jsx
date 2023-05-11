@@ -1,86 +1,78 @@
-import { useRef } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import ReasonsData from "../../Data/ReasonsData";
 import DownloadCardData from "../../Data/DownloadCardData";
 import Downloadcard from "../DownloadCard";
 import "./reasons.css";
 
 function Reasons() {
-  const textIndexRef = useRef(0);
-  const h2Ref = useRef(null);
-  const spanRef = useRef(null);
-  const texts = [
-    "Saving Charges",
-    "Got SEC license? ",
-    "Great Interest Rates?",
-    "Convinced",
-  ];
-  const spans = [
-    "Nope", 
-    "Yup",
-    "Confam", 
-    "Sign Up"
-    ];
+  
+    const [reasonIndex, setReasonIndex] = useState(0);
+    useEffect(()=>{
+        const timer = setTimeout(changeText,4000);
+        return ()=> clearTimeout(timer);
+    },[reasonIndex, setReasonIndex])
   const headingVariants = {
     hidden: {
       opacity: 0,
-      y: 100,
+      y: 0,
+      scale:0,
     },
     visible: {
-      opacity: 1,
-      y: 0,
+      opacity: [0,0,0,1,1,1,1,0],
+      y: [100,50,0,0,0,0,0,0,-50],
+      scale:[0.5,0.7,0.9,1,1,1,1,1,1],
       transition: {
-        delayChildren: 0.5,
-        duration: 3,
-       
+        duration: 4,
       },
+    
     },
+    exit:{
+      y:200,
+      opacity:0.5
+    }
   };
   const spanVariants = {
     hidden: { 
         opacity: 0, 
-        y: 20 
+       
     },
     visible: { 
         opacity: 1, 
-        y: 0 ,
+       
         transition:{
-            duration:0.25
+            duration:1,
+            delay:2.2,
+            ease:"easeIn"
 
-        }
+        },
     },
+    
   };
   function changeText() {
-    textIndexRef.current = (textIndexRef.current + 1) % texts.length;
-    h2Ref.current.key = texts[textIndexRef.current];
- spanRef.current.key =spans[textIndexRef.current];
+   setReasonIndex(prevState => (prevState + 1) % ReasonsData.length);
   }
-  console.log(h2Ref.current);
+  const {heading,spans,color} = ReasonsData[reasonIndex];
   return (
     <section className="reasons__section">
       <h3 className="reasons__section__question">WHY COWRYWISE ?</h3>
-      <AnimatePresence>
+      <AnimatePresence mode="wait" initial={false}>
         <div  style={{overflow:"hidden"}}>
         <motion.h2
           className="reasons__section__reason"
-          ref={h2Ref}
           variants={headingVariants}
           initial="hidden"
           animate="visible"
-          /* exit="hidden" */
-          key={texts[textIndexRef.current]}
-         
-         
+          key={reasonIndex}
         >
-          {texts[textIndexRef.current]}{" "}
+          {heading}{" "}
           
         <motion.span
-            className="reasons__section__answer"
-            ref={spanRef}
+            className=  {`reasons__section__answer ${color? 'primary__blue':""}`}
             variants={spanVariants}
-            /* onAnimationComplete={changeText} */
-            key={spans[textIndexRef.current]}
+            key={spans}
           >
-            {spans[textIndexRef.current]}{" "}
+            {spans}{" "}
           </motion.span>
         </motion.h2>
         </div>
@@ -95,7 +87,6 @@ function Reasons() {
   );
 }
 export default Reasons;
-/*
 
 
 
@@ -104,45 +95,4 @@ export default Reasons;
 
 
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      textIndexRef.current = (textIndexRef.current + 1) % texts.length;
-      h1Ref.current.key = textIndexRef.current;
-    }, 500);
-    return () => clearTimeout(timeoutId);
-  }, []);
-
-  const currentText = texts[textIndexRef.current];
-
-  const charElements = currentText.split("").map((char, index) => {
-    return (
-      <motion.span
-        key={index}
-        variants={charVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        {char}
-      </motion.span>
-    );
-  });
-
-  return (
-    <div style={{ height: "50vh", display: "flex", alignItems: "center" }}>
-      <AnimatePresence>
-        <motion.h1
-          ref={h1Ref}
-          variants={wordVariants}
-          initial="hidden"
-          animate="visible"
-          exit="hidden"
-          transition={{ duration: 0.5 }}
-          style={{ position: "absolute" }}
-        >
-          {charElements}
-        </motion.h1>
-      </AnimatePresence>
-    </div>
-  );
-} 
- */
+ 

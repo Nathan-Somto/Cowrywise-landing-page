@@ -40,6 +40,7 @@ function Navbar() {
      * */
     function openDropdown(index){
          setDropdown({...dropdown,[index]:!dropdown[index],[(index+1)%3]:false,[(index+2)%3]:false});
+         console.log("clicked");
       
     }
   
