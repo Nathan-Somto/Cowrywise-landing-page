@@ -62,9 +62,13 @@ margin-top:1rem;
 }
 .signup__form__bottom{
     display: flex;
-    align-items: center;
-    margin-top: 50px;
-    justify-content: space-between;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.signup__form__bottom a:first-child{
+    margin-bottom: 10px;
 }
 .signup__form__bottom .btn{
     font-size:1.05rem;
@@ -106,6 +110,17 @@ margin-top:1rem;
     border-radius: 50%;
     height:50px;
     width:50px;
+}
+@media (min-width:600px) {
+    .signup__form__bottom{
+        align-items: center;
+        flex-direction: row;
+        margin-top: 50px;
+        justify-content: space-between;
+    }
+    .signup__form__bottom a:first-child{
+        margin-bottom: 0;
+    }
 }
 @media (min-width:800px){
     .signup__heading{

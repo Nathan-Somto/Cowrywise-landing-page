@@ -151,26 +151,31 @@ function Navbar() {
         <Link to='/signup' className="btn btn-shadow">Sign Up for Free</Link>
       </div>
       <div className='nav__links__container'>
-        <a>
+        <Link to={'/signup'}>
             Sign Up
-        </a>
-        <a >
+        </Link>
+        <Link to={'/login'} >
             Log In
-        </a>
-        <a>
+        </Link>
+        <Link to={'/'}>
             About
-        </a>
-        <a >
+        </Link>
+        <Link to={'/'}>
             FAQ'S
-            </a>
-        <a>
+            </Link>
+        <Link to={'/'}>
             Security
-            </a>
-        <a>
+            </Link>
+        <Link to={'/'}>
             Learn
-        </a>
+        </Link>
       </div>
-      <small>Cowrywise Financial Technology Limited("Cowrywise") is a fund manager duly licensed by the securities and Exchange Commission (SEC) of Nigeria</small>
+      <small>
+        Cowrywise Financial Technology 
+        Limited("Cowrywise") 
+        is a fund manager duly licensed by 
+        the securities and Exchange Commission
+         (SEC) of Nigeria</small>
       </div>
      <div className={`nav__hamburger__menu ${openMenu ? 'active-hamburger':""}`} ref={menu} onClick={openMobileMenu}>
         <div className="bar"></div>

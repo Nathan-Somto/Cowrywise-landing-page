@@ -31,7 +31,24 @@ video{
     margin-top:1.25rem;
 }
 .hero__section__form{
+    display:none;
+}
+.hero__section__download{
+    display:flex;
+}
+.hero__section__form, .hero__section__download{
     margin-top:1.55rem;
+}
+.hero__section__download button{
+    cursor:pointer;
+}
+.hero__section__download  button p{
+    margin:0;
+    color:var(--white);
+}
+.hero__section__download  button:first-child{
+    margin-right:0.85rem;
+    color:var(--white);
 }
 .hero__section__form .btn{
     padding:0.9rem 1.5rem;
@@ -55,7 +72,7 @@ video{
     top:5%;
     width:70%;
     left:-20%;
-    min-width:300px;
+    min-width:320px;
     z-index:3;
     background-color: rgb(240, 206, 212);
     height:700px;
@@ -76,8 +93,8 @@ video{
 }
 .hero__section__card{
     position: absolute;
-    bottom:20%;
-    left:10%;
+    bottom:17%;
+    left:5%;
     z-index:7;
     width:300px;
     background-color: var(--white);
@@ -133,6 +150,14 @@ video{
 }
 .grey{
     filter:grayscale(100%);
+}
+@media(min-width:600px){
+    .hero__section__download{
+        display:none;
+    }
+    .hero__section__form{
+        display:block;
+    }
 }
 @media(min-width:1200px){
     .hero__section{

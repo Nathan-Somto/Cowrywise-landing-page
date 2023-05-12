@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { FaPlay, FaPlayCircle, FaStopCircle } from "react-icons/fa";
+import { FaPlay, FaPlayCircle, FaStopCircle ,FaGooglePlay, FaApple} from "react-icons/fa";
 import "./Hero.css";
 import thumbnail1 from "../../Assets/Home/thumbnail1.png";
 import thumbnail2 from "../../Assets/Home/thumbnail2.png";
@@ -79,7 +79,10 @@ function Hero() {
 
   const heading = "Put your money to work.";
   const thumbnails = [thumbnail1, thumbnail2, thumbnail3];
-
+  const download =[
+    {action:"Get it on",button_store:"PlayStore"},
+    {action:"Get it on",button_store:"AppStore"}
+  ]
   const videos = [wura_video, mayokun_video];
   const { poster, author, quote, username, backgroundColor } = heroData[index];
   return (
@@ -211,6 +214,19 @@ function Hero() {
             </label>
             <button className="btn btn-shadow">Start Investing</button>
           </form>
+          <div className="hero__section__download">
+          { download.map( ({action,button_store}, index)=>
+          (<button className="download__button" key={`${action}-${index}`}>
+            <span>{button_store === 'PlayStore' ? <FaGooglePlay size={'20'}/> : <FaApple size={'20'}/>}</span>
+            <div className='download__button__text'>
+                <p className='download__button__action'>{action}</p>
+                <h3 className='download__button__store'>{button_store}</h3>
+            </div>
+            </button>
+          )
+          )
+}
+          </div>
         </div>
       </header>
     

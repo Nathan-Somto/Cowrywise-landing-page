@@ -1,7 +1,9 @@
+import { motion } from 'framer-motion';
 import phone from '../../Assets/Home/phone.png';
 import './setup.css'
 const Payment = () =>
 {
+    const numbers = ['01', "02","03"];
     return(
         <section className ="setup__section">
             <div className ="setup__left">
@@ -11,10 +13,8 @@ const Payment = () =>
                 <h2>Start building wealth in 5 minutes</h2>
                 <div className ="setup__right__text">
                 <div className='setup__numbers'>
-                    <h4>01   <span className ='line'></span></h4>
-                    
-                    <h4>02 <span className ='line'></span></h4>
-                    <h4>03 <span className ='line'></span></h4>
+                    {numbers.map((number, index)=><h4 key={`${number}-${index}`}>{number} <motion.span className ='line'></motion.span> </h4>)}
+                    <motion.div initial={{opacity:0}} animate={{opacity:[0,1,1,1,0,0,1,0]}} transition={{duration:2,repeat:Infinity}} className='setup__blue__flash'></motion.div>
                 </div>
                 <div>
                     <div className='setup__step'>

@@ -34,6 +34,7 @@
   .setup__numbers{
     margin-right:2.5rem;
     color:var(--light-blue);
+    position: relative;
   }
   .setup__numbers h4{
     height:100px;
@@ -77,6 +78,7 @@
    font-size: 1.2rem;
    margin-top:1rem;
   }
+ /* ` */
 
   @media(min-width: 1024px){
     .setup__section{

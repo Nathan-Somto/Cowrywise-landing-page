@@ -63,12 +63,12 @@
 }
 .active{
     display:flex !important;
+    animation: fade-in 0.4s ease-in;
 }
 .nav__btn__container{
     display:none;
    
 }
-
 .nav__container.nav__active .nav__logo svg path{
     color:var(--white);
     fill:#fff;
@@ -78,9 +78,6 @@
 .nav__inner__container{
     display:none;
 }
-/* .nav__dropdown__container{
-    display:none;
-} */
 .main__nav__chevron{
     margin-right: 0.15rem;
     margin:auto;
